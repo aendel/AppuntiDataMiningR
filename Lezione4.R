@@ -78,3 +78,12 @@ V(g4)$name
 V(g4)$gender <- c("male","female","male","female","male","female")
 E(g4)$type <- "email"
 E(g4)$weight <- 10
+
+g4 <- set_graph_attr(g4, "name","Email Network")
+g4 <- delete_graph_attr(g4,"attributoDaEliminare")
+
+read_graph(file,format=c("edgelist",...)) #l'array continua, i puntini sono per semplicità
+write_graph(graph,file,format=c("edgelist","pajek"),...) #come sopra
+
+g <- read_graph("prova.txt")
+g 
