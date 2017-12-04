@@ -50,3 +50,5 @@ g4s <- simplify(g4, remove.multiple = T, remove.loops = F,
                 edge.attr.comb=c(weight="sum",type="ignore") )
 
 fg <- make_full_graph(40) #Tutti i nodi connessi tra loro (eccetto i loop, forse)
+
+tr <- make_tree(40, children = 3 , mode = "undirected")
