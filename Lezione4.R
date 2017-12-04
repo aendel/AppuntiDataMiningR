@@ -24,3 +24,8 @@ g2
 g3 <- graph( c("John","Johnny","Ciaone","Punto a caso"))
 plot(g3)
 g3
+
+g4 <- graph( c("John2","Johnny2","Ciaone2","Punto a caso2"),
+                isolates=c("Jess","Mark","Pino"))
+plot(g4)
+g4
