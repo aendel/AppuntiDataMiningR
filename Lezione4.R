@@ -38,3 +38,10 @@ plot(graph_from_literal(a:b:c---c:d:e)) #a/b/c collegati c/d/e collegati
 
 gl <- graph_from_literal(a-b-c-d-e-f, a-g-h-b, h-e:f:i, j)
 plot(gl)
+
+"""
+Un grafo realizzato con la funzione graph può presentare cappi, ripetizioni, nodi ect...
+Con la funzione simplify si possono rimuovere ridondanze e loop.
+
+"""
+net <- simplify(net, remove.multiple = T, remove.loops = T)
