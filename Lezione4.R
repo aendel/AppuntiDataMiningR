@@ -60,3 +60,8 @@ er <- sample_gnm(n=100,m=40)
 sw <- sample_smallworld(dim=2,size=10,nei=1,p=0.1)
 
 ba <- sample_pa(n=100,power=1,m=1,directed=F)
+g <- g1%m%g2 #Differenza
+g <- complementer(g1) #Complementare
+g <- g1%s%g2 #Intersezione
+g <- g1%u%g2 #Unione (Prendo una volta sola vertici uguali)
+g <- g1%du%g2 #Unione disgiunta (Se trovo più di una volta un arco tra due nodi uguali devono essere etichettati differentemente.)
