@@ -56,3 +56,5 @@ tr <- make_tree(40, children = 3 , mode = "undirected")
 ri <- make_ring(40)
 
 er <- sample_gnm(n=100,m=40)
+
+sw <- sample_smallworld(dim=2,size=10,nei=1,p=0.1)
