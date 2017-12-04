@@ -45,3 +45,6 @@ Con la funzione simplify si possono rimuovere ridondanze e loop.
 
 """
 net <- simplify(net, remove.multiple = T, remove.loops = T)
+
+g4s <- simplify(g4, remove.multiple = T, remove.loops = F,
+                edge.attr.comb=c(weight="sum",type="ignore") )
