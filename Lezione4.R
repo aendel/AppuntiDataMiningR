@@ -35,3 +35,6 @@ plot(graph_from_literal(a---b,b---c))
 plot(graph_from_literal(a--+b,b+--c)) #a punta a b , c punta a b
 plot(graph_from_literal(a+-+b,b+-+c)) #a e b / b e c si puntano a vicenda
 plot(graph_from_literal(a:b:c---c:d:e)) #a/b/c collegati c/d/e collegati
+
+gl <- graph_from_literal(a-b-c-d-e-f, a-g-h-b, h-e:f:i, j)
+plot(gl)
