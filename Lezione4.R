@@ -20,3 +20,7 @@ IGRAPH U--- 3 3 -- #attributi
 g2 <- graph( edges=c(1,2, 2,3, 3,1),n=10)
 plot(g2)
 g2
+
+g3 <- graph( c("John","Johnny","Ciaone","Punto a caso"))
+plot(g3)
+g3
