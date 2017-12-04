@@ -52,3 +52,7 @@ g4s <- simplify(g4, remove.multiple = T, remove.loops = F,
 fg <- make_full_graph(40) #Tutti i nodi connessi tra loro (eccetto i loop, forse)
 
 tr <- make_tree(40, children = 3 , mode = "undirected")
+
+ri <- make_ring(40)
+
+er <- sample_gnm(n=100,m=40)
