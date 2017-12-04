@@ -29,3 +29,6 @@ g4 <- graph( c("John2","Johnny2","Ciaone2","Punto a caso2"),
                 isolates=c("Jess","Mark","Pino"))
 plot(g4)
 g4
+
+
+plot(graph_from_literal(a---b,b---c))
