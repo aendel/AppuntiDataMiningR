@@ -58,3 +58,5 @@ ri <- make_ring(40)
 er <- sample_gnm(n=100,m=40)
 
 sw <- sample_smallworld(dim=2,size=10,nei=1,p=0.1)
+
+ba <- sample_pa(n=100,power=1,m=1,directed=F)
