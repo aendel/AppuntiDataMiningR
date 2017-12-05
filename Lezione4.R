@@ -86,4 +86,4 @@ read_graph(file,format=c("edgelist",...)) #l'array continua, i puntini sono per 
 write_graph(graph,file,format=c("edgelist","pajek"),...) #come sopra
 
 g <- read_graph("prova.txt")
-g 
+g
